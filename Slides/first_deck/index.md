@@ -61,13 +61,6 @@ To understand the relationships within the data, correlations should be checked.
 
 ## Correlations with other Variables 
 
-
-```r
-plot(dataset$mpg, dataset$disp, main = 'Scatterplot',xlab='MPG', ylab = 'Displacement')
-abline(lm(dataset$disp~dataset$mpg), col="red")
-lines(lowess(dataset$mpg,dataset$disp), col="blue")
-```
-
 ![plot of chunk StudyCorrelation](assets/fig/StudyCorrelation-1.png) 
 
 --- .class #id  
