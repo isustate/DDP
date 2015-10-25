@@ -104,7 +104,13 @@ head(dataset, n = 5L)
     <h2>Correlations with other Variables</h2>
   </hgroup>
   <article data-timings="">
-    
+    <pre><code class="r">plot(dataset$mpg, dataset$disp, main = &#39;Scatterplot&#39;,xlab=&#39;MPG&#39;, ylab = &#39;Displacement&#39;)
+abline(lm(dataset$disp~dataset$mpg), col=&quot;red&quot;)
+lines(lowess(dataset$mpg,dataset$disp), col=&quot;blue&quot;)
+</code></pre>
+
+<p><img src="assets/fig/StudyCorrelation-1.png" alt="plot of chunk StudyCorrelation"> </p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
